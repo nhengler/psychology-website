@@ -1,0 +1,78 @@
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { Calendar, Clock, MapPin, Video } from "lucide-react"
+
+const features = [
+  {
+    icon: Calendar,
+    title: "Horários Flexíveis",
+    description: "Sessões durante a semana e aos sábados",
+  },
+  {
+    icon: Clock,
+    title: "50 Minutos",
+    description: "Duração de cada sessão individual",
+  },
+  {
+    icon: MapPin,
+    title: "Presencial",
+    description: "Consultório em São Paulo - SP",
+  },
+  {
+    icon: Video,
+    title: "Online",
+    description: "Atendimento via videochamada",
+  },
+]
+
+export function CTA() {
+  return (
+    <section id="agendar" className="py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 sm:px-12 sm:py-20 lg:px-20 lg:py-24">
+          <div className="relative z-10 max-w-2xl mx-auto text-center">
+            <h2 className="font-serif text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl text-balance">
+              Dê o primeiro passo para uma vida mais equilibrada
+            </h2>
+            <p className="mt-6 text-primary-foreground/80 leading-relaxed">
+              Agendar sua primeira consulta é simples e sem compromisso. 
+              Vamos conversar sobre suas necessidades e como posso ajudar.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild size="lg" variant="secondary" className="text-base px-8 py-6">
+                <Link href="https://wa.me/5511999999999" target="_blank">
+                  Agendar pelo WhatsApp
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-base px-8 py-6 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                <Link href="mailto:contato@helenamartins.com.br">
+                  Enviar E-mail
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="relative z-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {features.map((feature) => (
+              <div key={feature.title} className="text-center">
+                <div className="mx-auto w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center">
+                  <feature.icon className="size-5 text-primary-foreground" />
+                </div>
+                <h3 className="mt-4 font-medium text-primary-foreground">
+                  {feature.title}
+                </h3>
+                <p className="mt-1 text-sm text-primary-foreground/70">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-96 h-96 rounded-full bg-accent/10 blur-3xl" />
+          <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/3 w-80 h-80 rounded-full bg-primary-foreground/5 blur-3xl" />
+        </div>
+      </div>
+    </section>
+  )
+}
