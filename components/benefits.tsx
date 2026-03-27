@@ -13,7 +13,7 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="bg-secondary/35 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -34,7 +34,7 @@ export function Benefits() {
             {benefits.map((benefit) => (
               <div 
                 key={benefit} 
-                className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border"
+                className="flex items-start gap-3 rounded-xl border border-border/60 bg-card/85 p-4 shadow-sm"
               >
                 <div className="shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5">
                   <Check className="size-3.5 text-accent" />

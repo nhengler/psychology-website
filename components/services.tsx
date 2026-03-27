@@ -36,7 +36,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-card">
+    <section id="servicos" className="bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium tracking-wide text-accent uppercase">
@@ -53,7 +53,7 @@ export function Services() {
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
-            <Card key={service.title} className="border-0 shadow-none bg-background hover:shadow-md transition-shadow duration-300">
+            <Card key={service.title} className="border border-border/60 bg-card/90 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-2">
                   <service.icon className="size-6 text-accent" />

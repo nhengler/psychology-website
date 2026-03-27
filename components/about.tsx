@@ -25,7 +25,7 @@ const values = [
 
 export function About() {
   return (
-    <section id="sobre" className="py-10 lg:py-24">
+    <section id="sobre" className="bg-secondary/40 py-10 lg:py-30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -57,7 +57,7 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl bg-muted overflow-hidden">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-36 h-36 mx-auto rounded-full bg-accent/10 flex items-center justify-center mb-6 lg:w-48 lg:h-48">
@@ -88,16 +88,16 @@ export function About() {
           </div>
         </div>
 
-        <div className="mt-24 grid md:grid-cols-3 gap-8">
+        <div className="mt-24 grid md:grid-cols-3 gap-16">
           {values.map((value) => (
-            <div key={value.title} className="text-center">
+            <div key={value.title} className="rounded-2xl border border-border/60 bg-background/80 p-8 text-center shadow-sm">
               <div className="mx-auto w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center">
                 <value.icon className="size-6 text-accent" />
               </div>
-              <h3 className="mt-6 font-serif text-xl font-medium text-foreground">
+              <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
                 {value.title}
               </h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">
+              <p className="mt-2 text-muted-foreground leading-relaxed">
                 {value.description}
               </p>
             </div>

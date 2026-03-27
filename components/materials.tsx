@@ -36,7 +36,7 @@ const materials = [
 
 export function Materials() {
   return (
-    <section id="materiais" className="py-24 lg:py-32 bg-card">
+    <section id="materiais" className="bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium tracking-wide text-accent uppercase">
@@ -53,13 +53,13 @@ export function Materials() {
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {materials.map((material) => (
-            <Card key={material.title} className="group border-0 shadow-none bg-background hover:shadow-md transition-all duration-300 cursor-pointer">
+            <Card key={material.title} className="group cursor-pointer border border-border/60 bg-card/90 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <material.icon className="size-5 text-accent" />
                   </div>
-                  <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
+                  <span className="rounded-full bg-secondary px-2 py-1 text-xs font-medium text-secondary-foreground">
                     {material.type}
                   </span>
                 </div>

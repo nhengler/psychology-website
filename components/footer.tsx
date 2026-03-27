@@ -30,7 +30,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border">
+    <footer className="border-t border-border bg-secondary/35">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
