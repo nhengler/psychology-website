@@ -1,5 +1,5 @@
 import { Heart, BookOpen, Users, ArrowRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const values = [
