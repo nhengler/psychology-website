@@ -25,9 +25,9 @@ const features = [
   },
 ]
 
-export function CTA() {
+export function Appointments() {
   return (
-    <section id="agendar" className="py-24 lg:py-32">
+    <section id="appointments" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-[linear-gradient(135deg,#c1a6dc_0%,#ddd0ef_52%,#f5efff_100%)] px-6 py-16 shadow-[0_24px_80px_-36px_rgba(111,78,145,0.28)] sm:px-12 sm:py-20 lg:px-20 lg:py-24">
           <div className="relative z-10 max-w-2xl mx-auto text-center">

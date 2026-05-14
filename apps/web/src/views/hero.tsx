@@ -4,13 +4,13 @@ import { ArrowRight } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[linear-gradient(135deg,#c5acdf_0%,#ddd0ef_55%,#f6f0ff_100%)] lg:py-18">
+    <section className="relative flex min-h-min items-center justify-center overflow-hidden bg-[linear-gradient(135deg,#c5acdf_0%,#ddd0ef_55%,#f6f0ff_100%)]">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/4 -left-20 h-96 w-96 rounded-full bg-background/70 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-20 h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute top-1/5 -left-20 h-96 w-96 rounded-full bg-background/70 blur-3xl" />
+        <div className="absolute bottom-1/5 -right-20 h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-14 text-center lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-4xl mt-20 px-6 py-6 text-center lg:px-8 lg:py-32">
         <h1 className="font-serif text-5xl font-medium leading-tight tracking-tight text-balance text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
           Ana Oliveira
         </h1>
@@ -34,7 +34,7 @@ export function Hero() {
           </Button>
         </div>
 
-        <div className="mt-20 border-t border-foreground/10" />
+        <div className="mt-12 mb-16 border-t border-foreground/10" />
 
       </div>
     </section>

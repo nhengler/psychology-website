@@ -5,9 +5,9 @@ const navigation = {
   main: [
     { name: "Início", href: "#" },
     { name: "Sobre", href: "#sobre" },
-    { name: "Serviços", href: "#servicos" },
     { name: "Materiais", href: "#materiais" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Agendamentos", href: "#agendamentos" },
+    { name: "Contatos", href: "#footer" }
   ],
   social: [
     {
@@ -22,7 +22,7 @@ const navigation = {
     },
     {
       name: "E-mail",
-      href: "mailto:contato@helenamartins.com.br",
+      href: "mailto:psiana.oliveiraalmeida@gmail.com",
       icon: Mail,
     },
   ],
@@ -30,7 +30,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-secondary/35">
+    <footer id="footer" className="border-t border-border bg-secondary/35">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Dra. Helena Martins. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Dra. Ana Oliveira. Todos os direitos reservados.
           </p>
         </div>
       </div>

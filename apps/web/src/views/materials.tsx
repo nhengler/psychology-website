@@ -36,7 +36,7 @@ const materials = [
 
 export function Materials() {
   return (
-    <section id="materiais" className="bg-background py-24 lg:py-32">
+    <section id="materials" className="bg-background py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium tracking-wide text-accent uppercase">

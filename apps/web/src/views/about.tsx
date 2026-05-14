@@ -25,7 +25,7 @@ const values = [
 
 export function About() {
   return (
-    <section id="sobre" className="bg-secondary/40 py-10 lg:py-30">
+    <section id="about" className="bg-secondary/40 py-10 lg:py-30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -76,7 +76,7 @@ export function About() {
                       </Link>
                     </Button>
 
-                    <Button asChild size="sm" className="text-base px-8 py-4">
+                    <Button asChild size="sm" className="text-base px-8 py-4 lg:py-5">
                       <Link href="">
                         Meus materiais
                       </Link>
