@@ -57,7 +57,7 @@ export function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm">
+            <div className="aspect-4/5 overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm lg:aspect-5/5">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-36 h-36 mx-auto rounded-full bg-accent/10 flex items-center justify-center mb-6 lg:w-48 lg:h-48">
