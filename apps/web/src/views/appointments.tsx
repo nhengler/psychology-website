@@ -32,11 +32,12 @@ export function Appointments() {
         <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-[linear-gradient(135deg,#c1a6dc_0%,#ddd0ef_52%,#f5efff_100%)] px-6 py-16 shadow-[0_24px_80px_-36px_rgba(111,78,145,0.28)] sm:px-12 sm:py-20 lg:px-20 lg:py-24">
           <div className="relative z-10 max-w-2xl mx-auto text-center">
             <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
-              Dê o primeiro passo para uma vida mais equilibrada
+            Dê o primeiro passo 
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Agendar sua primeira consulta é simples e sem compromisso. 
-              Vamos conversar sobre suas necessidades e como posso ajudar.
+              Vamos conversar sobre as necessidades da criança, e pensar 
+              juntos em como a terapia pode ajudar.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button asChild size="lg" className="px-8 py-6 text-base shadow-lg shadow-[#8f72b6]/15">

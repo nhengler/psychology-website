@@ -40,8 +40,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Psicóloga clínica dedicada a oferecer um espaço seguro e acolhedor 
-              para sua jornada de autoconhecimento e bem-estar.
+              Psicóloga clínica dedicada a oferecer um espaço seguro e acolhedor
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
               CRP: xx/xxxxxx

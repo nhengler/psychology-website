@@ -37,21 +37,19 @@ export function About() {
             </h2>
             <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Sou Helena Martins, psicóloga clínica formada pela Universidade
-                de São Paulo (USP), com especialização em Terapia
-                Cognitivo-Comportamental e mestrado em Psicologia da Saúde.
+                Sou <strong>Ana Paula Santos de Oliveira Almeida</strong>, psicóloga clínica formada pela 
+                Universidade Paulista <strong>(UNIP)</strong>, com atuação baseada na Terapia Cognitivo-Comportamental e foco 
+                no atendimento de crianças na primeira e segunda infância, dos 4 aos 12 anos.
               </p>
               <p>
-                Há mais de uma década, dedico-me a ajudar pessoas a
-                compreenderem suas emoções, desenvolverem habilidades de
-                enfrentamento e construírem uma relação mais saudável consigo
-                mesmas e com o mundo.
+                Há cerca de 6 anos, dedico-me a estudar comportamentos e ajudar crianças a compreenderem melhor suas 
+                emoções, desenvolverem habilidades sociais, fortalecerem sua autoestima e lidarem de forma mais saudável 
+                com os desafios dessa fase do desenvolvimento.
               </p>
               <p>
-                Acredito que a terapia é um processo colaborativo, onde você é o
-                protagonista da sua história. Meu papel é caminhar ao seu lado,
-                oferecendo ferramentas e suporte para que você alcance seus
-                objetivos.
+                Acredito que a terapia infantil é um processo acolhedor e colaborativo, que envolve a criança e sua rede 
+                de apoio. Meu papel é caminhar junto à família, oferecendo ferramentas e suporte para favorecer o bem-estar 
+                emocional e o desenvolvimento saudável da criança.
               </p>
             </div>
           </div>
