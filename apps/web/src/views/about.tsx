@@ -25,11 +25,11 @@ const values = [
 
 export function About() {
   return (
-    <section id="about" className="bg-secondary/40 py-10 lg:py-30">
+    <section id="about" className="py-10 lg:py-30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-sm font-medium tracking-wide text-accent uppercase">
+            <span className="text-sm font-medium tracking-wide text-subtitles uppercase text-accent">
               Sobre Mim
             </span>
             <h2 className="mt-4 font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
@@ -71,15 +71,15 @@ export function About() {
                   </p>
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
                     <Button asChild size="sm" className="text-base px-8 py-5">
-                      <Link href="">
-                        Minha carreira
-                      </Link>
+                      <Link href="">Minha carreira</Link>
                     </Button>
 
-                    <Button asChild size="sm" className="text-base px-8 py-4 lg:py-5">
-                      <Link href="">
-                        Meus materiais
-                      </Link>
+                    <Button
+                      asChild
+                      size="sm"
+                      className="text-base px-8 py-4 lg:py-5"
+                    >
+                      <Link href="">Meus materiais</Link>
                     </Button>
                   </div>
                 </div>
@@ -90,8 +90,11 @@ export function About() {
 
         <div className="mt-24 grid md:grid-cols-3 gap-16">
           {values.map((value) => (
-            <div key={value.title} className="rounded-2xl border border-border/60 bg-background/80 p-8 text-center shadow-sm">
-              <div className="mx-auto w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center">
+            <div
+              key={value.title}
+              className="rounded-2xl border border-border/60 bg-background/80 p-8 text-center shadow-sm"
+            >
+              <div className="mx-auto w-14 h-14 rounded-full flex items-center justify-center bg-accent/10">
                 <value.icon className="size-6 text-accent" />
               </div>
               <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
