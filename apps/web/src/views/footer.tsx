@@ -1,13 +1,13 @@
-import Link from "next/link"
-import { Instagram, Linkedin, Mail } from "lucide-react"
+import Link from "next/link";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const navigation = {
   main: [
     { name: "Início", href: "#" },
     { name: "Sobre", href: "#sobre" },
-    { name: "Materiais", href: "#materiais" },
+    //  { name: "Materiais", href: "#materiais" },
     { name: "Agendamentos", href: "#agendamentos" },
-    { name: "Contatos", href: "#footer" }
+    { name: "Contatos", href: "#footer" },
   ],
   social: [
     {
@@ -26,7 +26,7 @@ const navigation = {
       icon: Mail,
     },
   ],
-}
+};
 
 export function Footer() {
   return (
@@ -42,9 +42,7 @@ export function Footer() {
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
               Psicóloga clínica dedicada a oferecer um espaço seguro e acolhedor
             </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              CRP: xx/xxxxxx
-            </p>
+            <p className="mt-4 text-sm text-muted-foreground">CRP: xx/xxxxxx</p>
           </div>
 
           <div className="lg:col-span-1">
@@ -87,10 +85,11 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Dra. Ana Oliveira. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Dra. Ana Oliveira. Todos os
+            direitos reservados.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

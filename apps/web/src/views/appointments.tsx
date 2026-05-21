@@ -6,17 +6,12 @@ const features = [
   {
     icon: Calendar,
     title: "Horários Flexíveis",
-    description: "Sessões durante a semana e aos sábados",
+    description: "Sessões durante a semana",
   },
   {
     icon: Clock,
-    title: "50 Minutos",
+    title: "45 Minutos",
     description: "Duração de cada sessão individual",
-  },
-  {
-    icon: MapPin,
-    title: "Presencial",
-    description: "Consultório em São Paulo - SP",
   },
   {
     icon: Video,
@@ -53,7 +48,7 @@ export function Appointments() {
             </div>
           </div>
 
-          <div className="relative z-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="relative z-10 mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {features.map((feature) => (
               <div key={feature.title} className="text-center">
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-background/75">

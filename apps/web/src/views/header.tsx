@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const navigation = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#about" },
-  { name: "Materiais", href: "#materials" },
+  //{ name: "Materiais", href: "#materials" },
   { name: "Agendamentos", href: "#appointments" },
   { name: "Contatos", href: "#footer" },
-]
+];
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -26,7 +26,7 @@ export function Header() {
             </span>
           </Link>
         </div>
-        
+
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -84,5 +84,5 @@ export function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
