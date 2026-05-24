@@ -6,12 +6,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="relative flex min-h-min items-center justify-center overflow-hidden bg-#ffffff">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/5 -left-20 h-96 w-96 rounded-full bg-background/70 blur-3xl" />
-        <div className="absolute bottom-1/5 -right-20 h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
-      </div>
-
-      <div className="mx-auto max-w-4xl mt-20 px-6 py-6 text-center lg:grid lg:grid-cols-2 lg:gap-x-40 lg:px-0 lg:py-32">
+      <div className="mx-auto max-w-4xl mt-20 px-6 pt-6 text-center lg:grid lg:grid-cols-2 lg:gap-x-40 lg:px-0 lg:py-32">
         <div className="flex flex-col items-center lg:col-start-2 ">
           <Image
             src="/user.svg"
@@ -43,7 +38,7 @@ export function Hero() {
               size="lg"
               className="px-8 py-6 text-base shadow-lg shadow-[#8f72b6]/15"
             >
-              <Link href="#agendar">
+              <Link href="#appointments">
                 Agendar Consulta
                 <ArrowRight className="ml-2 size-4" />
               </Link>
@@ -51,7 +46,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-12 mb-16 border-t border-foreground/10 lg:col-span-2" />
+        <div className="mt-12 mb-6 border-t border-foreground/10 lg:col-span-2" />
       </div>
     </section>
   );

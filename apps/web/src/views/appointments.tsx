@@ -36,12 +36,12 @@ export function Appointments() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button asChild size="lg" className="px-8 py-6 text-base shadow-lg shadow-[#8f72b6]/15">
-                <Link href="https://wa.me/5511999999999" target="_blank">
+                <Link href="https://wa.me/5511950401124" target="_blank">
                   Agendar pelo WhatsApp
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-background/70 border-border/70 px-8 py-6 text-base text-foreground hover:bg-background/90 hover:text-foreground">
-                <Link href="mailto:contato@helenamartins.com.br">
+                <Link href="mailto:psiana.oliveiraalmeida@gmail.com">
                   Enviar E-mail
                 </Link>
               </Button>
