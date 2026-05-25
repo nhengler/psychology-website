@@ -1,7 +1,18 @@
+"use client";
+
 import { Heart, BookOpen, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/animations/reveal";
 import Link from "next/link";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { AnaOliveira } from "@/components/resumes/ana-oliveira";
 
 const values = [
   {
@@ -25,6 +36,8 @@ const values = [
 ];
 
 export function About() {
+  const [showResume, setShowResume] = useState(false);
+
   return (
     <section id="about" className="py-10 lg:py-15">
       <Reveal>
@@ -39,19 +52,25 @@ export function About() {
               </h2>
               <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Sou <strong>Ana Paula Santos de Oliveira Almeida</strong>, psicóloga clínica formada pela 
-                  Universidade Paulista <strong>(UNIP)</strong>, com atuação baseada na Terapia Cognitivo-Comportamental e foco 
-                  no atendimento de crianças na primeira e segunda infância, dos 4 aos 12 anos.
+                  Sou <strong>Ana Paula Santos de Oliveira Almeida</strong>,
+                  psicóloga clínica formada pela Universidade Paulista{" "}
+                  <strong>(UNIP)</strong>, com atuação baseada na Terapia
+                  Cognitivo-Comportamental e foco no atendimento de crianças na
+                  primeira e segunda infância, dos 4 aos 12 anos.
                 </p>
                 <p>
-                  Há cerca de 6 anos, dedico-me a estudar comportamentos e ajudar crianças a compreenderem melhor suas 
-                  emoções, desenvolverem habilidades sociais, fortalecerem sua autoestima e lidarem de forma mais saudável 
-                  com os desafios dessa fase do desenvolvimento.
+                  Há cerca de 6 anos, dedico-me a estudar comportamentos e
+                  ajudar crianças a compreenderem melhor suas emoções,
+                  desenvolverem habilidades sociais, fortalecerem sua autoestima
+                  e lidarem de forma mais saudável com os desafios dessa fase do
+                  desenvolvimento.
                 </p>
                 <p>
-                  Acredito que a terapia infantil é um processo acolhedor e colaborativo, que envolve a criança e sua rede 
-                  de apoio. Meu papel é caminhar junto à família, oferecendo ferramentas e suporte para favorecer o bem-estar 
-                  emocional e o desenvolvimento saudável da criança.
+                  Acredito que a terapia infantil é um processo acolhedor e
+                  colaborativo, que envolve a criança e sua rede de apoio. Meu
+                  papel é caminhar junto à família, oferecendo ferramentas e
+                  suporte para favorecer o bem-estar emocional e o
+                  desenvolvimento saudável da criança.
                 </p>
               </div>
             </div>
@@ -61,7 +80,9 @@ export function About() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="w-36 h-36 mx-auto rounded-full bg-accent/10 flex items-center justify-center mb-6 lg:w-48 lg:h-48">
-                      <span className="font-serif text-4xl text-accent">AO</span>
+                      <span className="font-serif text-4xl text-accent">
+                        AO
+                      </span>
                     </div>
                     <p className="font-serif text-xl text-foreground">
                       Dra. Ana Oliveira
@@ -70,16 +91,22 @@ export function About() {
                       Psicóloga Clínica
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-                      <Button asChild size="sm" className="text-base px-8 py-5">
-                        <Link href="">Minha carreira</Link>
-                      </Button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button className="text-base px-8 py-5">
+                            Minha carreira
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-5xl">
+                          <DialogHeader className="sr-only">
+                            <DialogTitle>Minha carreira</DialogTitle>
+                          </DialogHeader>
+                          <AnaOliveira />
+                        </DialogContent>
+                      </Dialog>
 
-                      <Button
-                        asChild
-                        size="sm"
-                        className="text-base px-8 py-4 lg:py-5"
-                      >
-                        <Link href="">Meus materiais</Link>
+                      <Button className="text-base px-8 py-4 lg:py-5">
+                        Meus materiais
                       </Button>
                     </div>
                   </div>
