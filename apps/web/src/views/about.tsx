@@ -97,7 +97,7 @@ export function About() {
                             Minha carreira
                           </Button>
                         </DialogTrigger>
-                        <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-5xl">
+                        <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-4xl">
                           <DialogHeader className="sr-only">
                             <DialogTitle>Minha carreira</DialogTitle>
                           </DialogHeader>
