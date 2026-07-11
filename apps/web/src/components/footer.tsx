@@ -4,9 +4,9 @@ import { Instagram, Linkedin, Mail } from "lucide-react";
 const navigation = {
   main: [
     { name: "Início", href: "#" },
-    { name: "Sobre", href: "#sobre" },
+    { name: "Sobre", href: "#about" },
     //  { name: "Materiais", href: "#materiais" },
-    { name: "Agendamentos", href: "#agendamentos" },
+    { name: "Agendamentos", href: "#appointments" },
     { name: "Contatos", href: "#footer" },
   ],
   social: [
@@ -42,7 +42,7 @@ export function Footer() {
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
               Psicóloga clínica dedicada a oferecer um espaço seguro e acolhedor
             </p>
-            <p className="mt-4 text-sm text-muted-foreground">CRP: xx/xxxxxx</p>
+            <p className="mt-4 text-sm text-muted-foreground">CRP: 06/181389</p>
           </div>
 
           <div className="lg:col-span-1">
@@ -66,7 +66,7 @@ export function Footer() {
             <div className="mt-4 space-y-3 text-sm text-muted-foreground">
               <p>São Paulo, SP - Brasil</p>
               <p>psiana.oliveiraalmeida@gmail.com</p>
-              <p>(11) 99999-9999</p>
+              <p>(11) 95640-3569</p>
             </div>
             <div className="mt-6 flex gap-4">
               {navigation.social.map((item) => (

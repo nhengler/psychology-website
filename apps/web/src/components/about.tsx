@@ -1,6 +1,6 @@
 "use client";
 
-import { Heart, BookOpen, Users, ArrowRight } from "lucide-react";
+import { Heart, BookOpen, Users, ArrowRight, Target, RefreshCcw, UserRoundCog } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/animations/reveal";
 import Link from "next/link";
@@ -16,22 +16,22 @@ import { AnaOliveira } from "@/components/resumes/ana-oliveira";
 
 const values = [
   {
-    icon: Heart,
-    title: "Escuta Acolhedora",
+    icon: Target,
+    title: "Metacognição",
     description:
-      "Um ambiente seguro onde você pode se expressar sem julgamentos.",
+      "''A terapia consiste não em levar o paciente a descobrir a solução para seu problema, mas em mudá-lo de tal modo que seja capaz de descobri-la''",
   },
   {
-    icon: BookOpen,
-    title: "Atualização Constante",
+    icon: RefreshCcw,
+    title: "Resiliência",
     description:
-      "Formação continuada em abordagens terapêuticas baseadas em evidências.",
+      "''Não considere nenhuma prática como imutável. Mude e esteja pronto a mudar novamente''",
   },
   {
-    icon: Users,
-    title: "Atendimento Humanizado",
+    icon: UserRoundCog,
+    title: "Autonomia",
     description:
-      "Cada pessoa é única e merece um cuidado personalizado às suas necessidades.",
+      "''Liberdade é a capacidade do ser humano de participar do próprio desenvolvimento. é a nossa capacidade de moldar a nós mesmos''",
   },
 ];
 
@@ -50,27 +50,28 @@ export function About() {
               <h2 className="mt-4 font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
                 Uma jornada dedicada ao cuidado emocional
               </h2>
-              <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
+              <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Sou <strong>Ana Paula Santos de Oliveira Almeida</strong>,
                   psicóloga clínica formada pela Universidade Paulista{" "}
-                  <strong>(UNIP)</strong>, com atuação baseada na Terapia
-                  Cognitivo-Comportamental e foco no atendimento de crianças na
-                  primeira e segunda infância, dos 4 aos 12 anos.
+                  <strong>(UNIP)</strong>, com atuação baseada na abordagem 
+                  comportamental.
                 </p>
                 <p>
-                  Há cerca de 6 anos, dedico-me a estudar comportamentos e
-                  ajudar crianças a compreenderem melhor suas emoções,
-                  desenvolverem habilidades sociais, fortalecerem sua autoestima
-                  e lidarem de forma mais saudável com os desafios dessa fase do
-                  desenvolvimento.
+                  Há mais de 8 anos, dedico-me ao estudo e à compreensão do 
+                  ser humano de forma integral, considerando os diversos
+                  aspectos que influaneciam sua maneira de sentir, pensar,
+                  agir e se relacionar com o mundo. Também ofereço orientação
+                  parental, auxiliando pais e responsáveis na compreensão das
+                  necessidades emocionais e comportamentais de seus filhos, 
+                  favorecendo relações familiares mais saudáveis e promovendo o 
+                  desenvolvimento infantil.
                 </p>
                 <p>
-                  Acredito que a terapia infantil é um processo acolhedor e
-                  colaborativo, que envolve a criança e sua rede de apoio. Meu
-                  papel é caminhar junto à família, oferecendo ferramentas e
-                  suporte para favorecer o bem-estar emocional e o
-                  desenvolvimento saudável da criança.
+                  Atualmente, também atuo em uma clínica multidisciplinar, realizando atendimentos 
+                  a crianças e adolescentes neurotípicos e neurodrivergentes, contribuindo para 
+                  o desenvolvimento de habilidades socioemocionais, comunicativas, comportamentais 
+                  e de autonomia.
                 </p>
               </div>
             </div>
@@ -91,23 +92,7 @@ export function About() {
                       Psicóloga Clínica
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button className="text-base px-8 py-5">
-                            Minha carreira
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent className="max-h-[85vh] overflow-y-auto sm:max-w-4xl">
-                          <DialogHeader className="sr-only">
-                            <DialogTitle>Minha carreira</DialogTitle>
-                          </DialogHeader>
-                          <AnaOliveira />
-                        </DialogContent>
-                      </Dialog>
-
-                      <Button className="text-base px-8 py-4 lg:py-5">
-                        Meus materiais
-                      </Button>
+                      
                     </div>
                   </div>
                 </div>
@@ -127,7 +112,7 @@ export function About() {
                 <h3 className="mt-2 font-serif text-xl font-medium text-foreground">
                   {value.title}
                 </h3>
-                <p className="mt-2 text-muted-foreground leading-relaxed">
+                <p className="italic mt-2 text-muted-foreground leading-relaxed">
                   {value.description}
                 </p>
               </div>

@@ -23,7 +23,7 @@ export function Hero() {
           </h1>
 
           <span className="mt-4 mb-6 inline-block text-sm font-medium tracking-wide text-muted-foreground uppercase">
-            Psicóloga Clínica | CRP: xx/xxxxxx
+            Psicóloga Clínica | CRP: 06/181389
           </span>
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground">
