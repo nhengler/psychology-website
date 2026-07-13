@@ -5,28 +5,36 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-min items-center justify-center overflow-hidden bg-#ffffff">
-      <div className="mx-auto max-w-4xl mt-20 px-6 pt-6 text-center lg:grid lg:grid-cols-2 lg:gap-x-40 lg:px-0 lg:py-32">
-        <div className="flex flex-col items-center lg:col-start-2 ">
+    <section className="flex min-h-min items-center justify-center overflow-hidden bg-#ffffff">
+      <div className="mx-auto max-w-5xl mt-20 px-6 pt-6 text-center lg:grid lg:grid-cols-2 lg:gap-x-40 lg:px-0 lg:py-32">
+        <div className="flex flex-col items-center lg:col-start-2 relative  ">
+          <Image
+            src="/bg-smoke.png"
+            alt="Hero image"
+            width={250}
+            height={300}
+            className="opacity-40 mb-10 lg:w-90 lg:h-70 lg:mt-16 absolute"
+          />
+
           <Image
             src="/user.svg"
-            alt="Hero image"
-            width={180}
-            height={180}
-            className="mb-4 lg:w-70 lg:mt-10"
+            alt="User image"
+            width={150}
+            height={200}
+            className="z-10 mb-10 lg:w-90 lg:h-70 lg:mt-8 lg:absolute"
           />
         </div>
 
         <div className="flex flex-col lg:col-start-1 lg:row-start-1">
-          <h1 className="font-serif text-5xl font-medium leading-tight tracking-tight text-balance text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-5xl font-medium leading-tight tracking-tight text-balance text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             Ana Oliveira
           </h1>
 
-          <span className="mt-4 mb-6 inline-block text-sm font-medium tracking-wide text-muted-foreground uppercase">
+          <span className="mt-2 mb-4 inline-block text-sm font-medium tracking-wide text-muted-foreground uppercase">
             Psicóloga Clínica | CRP: 06/181389
           </span>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-pretty text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-2xl text-md leading-7 text-pretty text-muted-foreground lg:text-md">
             Ofereço um espaço seguro e acolhedor para você explorar suas
             emoções, superar desafios e encontrar equilíbrio. Juntos,
             construiremos o caminho para uma vida mais leve e significativa.
