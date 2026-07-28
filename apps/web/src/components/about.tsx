@@ -20,18 +20,21 @@ const values = [
     title: "Metacognição",
     description:
       "''A terapia consiste não em levar o paciente a descobrir a solução para seu problema, mas em mudá-lo de tal modo que seja capaz de descobri-la''",
+    author: "- B. F. Skinner"
   },
   {
     icon: RefreshCcw,
     title: "Resiliência",
     description:
       "''Não considere nenhuma prática como imutável. Mude e esteja pronto a mudar novamente''",
+    author: "- B. F. Skinner"
   },
   {
     icon: UserRoundCog,
     title: "Autonomia",
     description:
-      "''Liberdade é a capacidade do ser humano de participar do próprio desenvolvimento. é a nossa capacidade de moldar a nós mesmos''",
+      "''Liberdade é a capacidade do ser humano de participar do próprio desenvolvimento. É a nossa capacidade de moldar a nós mesmos''",
+    author: "- Paul Kurtz"
   },
 ];
 
@@ -114,6 +117,10 @@ export function About() {
                 </h3>
                 <p className="italic mt-2 text-muted-foreground leading-relaxed">
                   {value.description}
+                </p>
+
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {value.author}
                 </p>
               </div>
             ))}
