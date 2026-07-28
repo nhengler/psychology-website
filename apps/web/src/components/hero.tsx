@@ -31,19 +31,19 @@ export function Hero() {
               alt="Hero image"
               width={150}
               height={200}
-              className="z-20 opacity-70 mt-45 mb-10 lg:w-70 lg:h-35 lg:mt-66 lg:opacity-50 absolute"
+              className="opacity-70 mt-40 mb-10 lg:w-70 lg:h-35 lg:mt-66 lg:opacity-50 absolute"
             />
 
             <Image
-              src="/ana-profile-pic.png"
+              src="/ana-profile-pic-2.png"
               alt="User image"
               width={180}
               height={200}
-              className="z-10 mb-10 lg:w-2xs lg:-translate-y-3 lg:absolute"
+              className="z-10 mb-10 translate-y-4 lg:translate-y-2 lg:w-2xs lg:absolute"
             />
           </div>
 
-          <div className="flex flex-col lg:col-start-1 lg:row-start-1">
+          <div className="flex flex-col lg:col-start-1 lg:row-start-1 lg:translate-y-6">
             <h1 className="font-serif text-5xl font-medium leading-tight tracking-tight text-balance text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
               Ana Oliveira
             </h1>
