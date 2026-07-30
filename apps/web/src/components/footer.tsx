@@ -36,7 +36,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="#" className="inline-block">
               <span className="font-serif text-xl font-semibold text-foreground">
-                Dra. Ana Oliveira
+                Ana Oliveira
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
@@ -66,7 +66,7 @@ export function Footer() {
             <div className="mt-4 space-y-3 text-sm text-muted-foreground">
               <p>São Paulo, SP - Brasil</p>
               <p>psiana.oliveiraalmeida@gmail.com</p>
-              <p>(11) 95640-3569</p>
+              <p>(11) 95040-1124</p>
             </div>
             <div className="mt-6 flex gap-4">
               {navigation.social.map((item) => (
@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Dra. Ana Oliveira. Todos os
+            &copy; {new Date().getFullYear()} Ana Oliveira. Todos os
             direitos reservados.
           </p>
         </div>

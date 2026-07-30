@@ -15,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dra. Ana Oliveira | Psicóloga Clínica',
+  title: 'Ana Oliveira | Psicóloga Clínica',
   description: 'Psicoterapia humanizada e acolhedora. Atendimento presencial e online para ansiedade, depressão, autoconhecimento e desenvolvimento pessoal.',
   generator: 'v0.app',
   icons: {
