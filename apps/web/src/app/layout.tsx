@@ -16,22 +16,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Ana Oliveira | Psicóloga Clínica',
-  description: 'Psicoterapia humanizada e acolhedora. Atendimento presencial e online para ansiedade, depressão, autoconhecimento e desenvolvimento pessoal.',
+  description: 'Psicoterapia humanizada e acolhedora. Atendimento presencial e online.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/ana-icon.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/ana-icon.png',
         media: '(prefers-color-scheme: dark)',
       },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      
     ],
     apple: '/apple-icon.png',
   },
