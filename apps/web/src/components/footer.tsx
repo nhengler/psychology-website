@@ -88,6 +88,16 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Ana Oliveira. Todos os
             direitos reservados.
           </p>
+          <p className="mt-2 text-center text-xs text-muted-foreground">
+            Desenvolvido por{" "}
+            <Link
+              href="https://nhengler.dev/"
+              className="underline underline-offset-4 transition-colors hover:text-foreground"
+              target="_blank"
+            >
+              Nicolas Hengler
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

@@ -42,8 +42,8 @@ const values = [
     icon: UserRoundCog,
     title: "Autonomia",
     description:
-      "''Liberdade é a capacidade do ser humano de participar do próprio desenvolvimento. É a nossa capacidade de moldar a nós mesmos''",
-    author: "- Paul Kurtz",
+      "''O paradoxo curioso é que quando eu me aceito como sou, então eu posso mudar''",
+    author: "- Carl Rogers",
   },
 ];
 

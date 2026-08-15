@@ -1,37 +1,37 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, Heart, Sparkles, Users, Leaf, Moon } from "lucide-react"
+import { Brain, Heart, Sparkles, Users, Leaf, Moon, Speech } from "lucide-react"
 import { Reveal } from "@/components/animations/reveal";
 
 const services = [
   {
     icon: Brain,
     title: "Ansiedade e Estresse",
-    description: "Técnicas e estratégias para gerenciar a ansiedade, reduzir o estresse e recuperar a tranquilidade no dia a dia.",
+    description: "Compreender os gatilhos da ansiedade, desenvolver estratégias de regulação emocional e formas práticas de lidar com o estresse no dia a dia.",
   },
   {
     icon: Heart,
     title: "Depressão",
-    description: "Acompanhamento terapêutico para superar a tristeza profunda, recuperar a energia vital e encontrar novos sentidos.",
+    description: "Espaço terapêutico para acolher a tristeza profunda e o desânimo, onde construímos juntos ferramentas para que você possa reconstruir sua rotina e vivenciá-la de forma mais leve e significativa.",
   },
   {
     icon: Sparkles,
     title: "Autoconhecimento",
-    description: "Exploração da sua história, padrões de comportamento e crenças para uma vida mais autêntica e consciente.",
+    description: "Entender como suas relações moldam suas reações e como suas reações mudam as relações à sua volta.",
   },
   {
     icon: Users,
     title: "Relacionamentos",
-    description: "Trabalho sobre vínculos afetivos, comunicação assertiva e construção de relações mais saudáveis.",
+    description: "Compreender continuamente como nos relacionamos com o mundo, visando o bem-estar próprio e das relações.",
   },
   {
     icon: Leaf,
     title: "Desenvolvimento Pessoal",
-    description: "Fortalecimento da autoestima, definição de metas e desenvolvimento de habilidades emocionais.",
+    description: "Ampliação do autoconhecimento, desenvolvimento de habilidades socioemocionais, estratégias para busca de seus objetivos.",
   },
   {
-    icon: Moon,
-    title: "Luto e Perdas",
-    description: "Suporte no processo de elaboração de perdas, respeitando o tempo e as particularidades de cada pessoa.",
+    icon: Speech,
+    title: "Orientação parental",
+    description: "Espaço colaborativo para compreender os desafios da rotina com os filhos, onde construímos juntos estratégias práticas para fortalecer o vínculo, lidar com comportamentos desafiadores na busca por uma melhor relação familiar.",
   },
 ]
 
@@ -48,8 +48,7 @@ export function Services() {
               Como posso ajudar você
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Cada jornada é única. Ofereço atendimento especializado em diversas áreas, 
-              sempre com foco no seu bem-estar e crescimento pessoal.
+              Cada jornada é única. Atendimento focado nas necessidades reais de cada pessoa e família.
             </p>
           </div>
 

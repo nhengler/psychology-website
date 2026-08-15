@@ -53,9 +53,9 @@ export function Hero() {
             </span>
 
             <p className="mx-auto mt-4 max-w-2xl text-md leading-7 text-pretty text-muted-foreground lg:text-md">
-              Ofereço um espaço seguro e acolhedor para você explorar suas
-              emoções, superar desafios e encontrar equilíbrio. Juntos,
-              construiremos o caminho para uma vida mais leve e significativa.
+              Criei este espaço seguro e acolhedor, para que juntos possamos
+              construir alternativas para uma caminhada mais leve e
+              significativa
             </p>
 
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
