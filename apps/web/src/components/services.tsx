@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, Heart, Sparkles, Users, Leaf, Moon, Speech } from "lucide-react"
+import { Brain, Heart, Sparkles, Users, Leaf, Moon, Speech, HeartHandshake } from "lucide-react"
 import { Reveal } from "@/components/animations/reveal";
 
 const services = [
@@ -9,7 +9,7 @@ const services = [
     description: "Compreender os gatilhos da ansiedade, desenvolver estratégias de regulação emocional e formas práticas de lidar com o estresse no dia a dia.",
   },
   {
-    icon: Heart,
+    icon: HeartHandshake,
     title: "Depressão",
     description: "Espaço terapêutico para acolher a tristeza profunda e o desânimo, onde construímos juntos ferramentas para que você possa reconstruir sua rotina e vivenciá-la de forma mais leve e significativa.",
   },

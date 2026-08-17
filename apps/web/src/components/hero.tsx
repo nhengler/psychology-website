@@ -31,15 +31,15 @@ export function Hero() {
               alt="Hero image"
               width={150}
               height={200}
-              className="opacity-70 mt-40 mb-10 lg:w-70 lg:h-35 lg:mt-66 lg:opacity-50 absolute"
+              className="opacity-70 mt-40 mb-10 lg:w-70 lg:h-35 lg:mt-60 lg:opacity-50 absolute"
             />
 
             <Image
-              src="/ana-profile-pic-2.png"
+              src="/ana-new-pic.png"
               alt="User image"
               width={180}
               height={200}
-              className="z-10 mb-10 translate-y-4 lg:translate-y-2 lg:w-2xs lg:absolute"
+              className="w-2xs z-10 mb-8 lg:-translate-y-11 lg:w-2xl lg:absolute"
             />
           </div>
 
