@@ -31,7 +31,7 @@ export function Appointments() {
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Agendar sua primeira consulta é simples e sem compromisso. 
-              Vamos conversar suas necessidades, e pensar 
+              Vamos conversar sobre suas necessidades, e pensar 
               juntos em como a terapia pode ajudar.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
