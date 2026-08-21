@@ -9,7 +9,7 @@ const navigation = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#about" },
   { name: "Serviços", href: "#services" },
-  //{ name: "Materiais", href: "#materials" },
+  { name: "Materiais", href: "#materials" },
   { name: "Agendamentos", href: "#appointments" },
   { name: "Contatos", href: "#footer" },
 ];

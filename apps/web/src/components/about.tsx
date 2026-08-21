@@ -108,6 +108,11 @@ export function About() {
                     <p className="text-sm text-muted-foreground mt-2">
                       Psicóloga Clínica
                     </p>
+                    <Button className="mt-6 px-6 py-4 text-base shadow-lg shadow-[#8f72b6]/15 lg:mt-8">
+                      <Link href="#materials">
+                        Meus materiais
+                      </Link>
+                    </Button>
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6"></div>
                   </div>
                 </div>
