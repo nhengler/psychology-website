@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       },
       
     ],
-    apple: '/apple-icon.png',
+    apple: '/ana-icon.png',
   },
 }
 
