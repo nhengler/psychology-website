@@ -4,6 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import {
+  ClerkProvider,
+  Show,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 
 const navigation = [
   { name: "Início", href: "#" },
@@ -55,10 +62,20 @@ export function Header() {
           ))}
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button asChild>
-            <Link href="">Área do profissional</Link>
-          </Button>
+        <div className="hidden gap-5 lg:flex lg:flex-1 lg:justify-end lg:items-center">
+          <Show when="signed-out">
+            <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-10 lg:px-5 cursor-pointer">
+              <SignInButton>Entrar</SignInButton>
+            </Button>
+            <SignUpButton>
+              <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-10 lg:px-5 cursor-pointer">
+                Cadastre-se
+              </Button>
+            </SignUpButton>
+          </Show>
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
         </div>
       </nav>
 
@@ -76,10 +93,20 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="mt-4 pt-4 border-t border-border">
-              <Button asChild className="w-full">
-                <Link href="">Área do profissional</Link>
-              </Button>
+            <div className="mt-4 pt-4 flex gap-5 border-t border-border">
+              <Show when="signed-out">
+                <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-12 lg:px-5 cursor-pointer">
+                  <SignInButton>Entrar</SignInButton>
+                </Button>
+                <SignUpButton>
+                  <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-12 lg:px-5 cursor-pointer">
+                    Cadastre-se
+                  </Button>
+                </SignUpButton>
+              </Show>
+              <Show when="signed-in">
+                <UserButton />
+              </Show>
             </div>
           </div>
         </div>
