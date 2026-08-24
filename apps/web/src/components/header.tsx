@@ -64,10 +64,12 @@ export function Header() {
 
         <div className="hidden gap-5 lg:flex lg:flex-1 lg:justify-end lg:items-center">
           <Show when="signed-out">
-            <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-10 lg:px-5 cursor-pointer">
-              <SignInButton>Entrar</SignInButton>
-            </Button>
-            <SignUpButton>
+            <SignInButton mode="modal">
+              <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-10 lg:px-5 cursor-pointer">
+                Entrar
+              </Button>
+            </SignInButton>
+            <SignUpButton mode="modal">
               <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-10 lg:px-5 cursor-pointer">
                 Cadastre-se
               </Button>
@@ -95,10 +97,12 @@ export function Header() {
             ))}
             <div className="mt-4 pt-4 flex gap-5 border-t border-border">
               <Show when="signed-out">
-                <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-12 lg:px-5 cursor-pointer">
-                  <SignInButton>Entrar</SignInButton>
-                </Button>
-                <SignUpButton>
+                <SignInButton mode="modal">
+                  <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-12 lg:px-5 cursor-pointer">
+                    Entrar
+                  </Button>
+                </SignInButton>
+                <SignUpButton mode="modal">
                   <Button className="shadow-md shadow-[#8f72b6]/15 text-white rounded-full font-medium lg:text-sm lg:h-12 lg:px-5 cursor-pointer">
                     Cadastre-se
                   </Button>

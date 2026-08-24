@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ClerkProvider, Show, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import { ptBR } from '@clerk/localizations/pt-BR'
 import '@/styles/globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -47,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>
-        <ClerkProvider>
+        <ClerkProvider localization={ptBR}>
         {children}
         </ClerkProvider>
         <Analytics />
