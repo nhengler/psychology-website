@@ -9,16 +9,16 @@ type VerificationRecord = {
  *
  * `globalThis` é nativo do JavaScript (equivalente ao 'window.algumaCoisa' para navegador).
  * Aqui apenas informamos ao TypeScript
- * que ele também pode conter a propriedade `guestVerificationStore`,
+ * que ele também pode conter a propriedade `guestPurchaseVerification`,
  * usada para preservar temporariamente os códigos durante o desenvolvimento.
  */
 const globalStore = globalThis as unknown as {
-  guestVerificationStore?: Map<string, VerificationRecord>;
+  guestPurchaseVerification?: Map<string, VerificationRecord>;
 };
 
-export const guestVerificationStore =
-  globalStore.guestVerificationStore ?? new Map<string, VerificationRecord>();
+export const guestPurchaseVerification =
+  globalStore.guestPurchaseVerification ?? new Map<string, VerificationRecord>();
 
 if (process.env.NODE_ENV !== "production") {
-  globalStore.guestVerificationStore = guestVerificationStore;
+  globalStore.guestPurchaseVerification = guestPurchaseVerification;
 }
