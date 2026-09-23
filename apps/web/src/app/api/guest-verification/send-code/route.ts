@@ -32,7 +32,7 @@ export async function POST(request: Request) {
   });
 
   const { error } = await resend.emails.send({
-    from: "Ana Oliveira <onboarding@resend.dev>",
+    from: "Psicóloga Ana Oliveira <onboarding@resend.dev>",
     to: [normalizedEmail],
     subject: "Seu código de verificação",
     html: `
