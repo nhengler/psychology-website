@@ -30,7 +30,17 @@ export function PurchaseDialog() {
     clerk.openSignUp({});
   }
 
-  type PurchaseStep = "choice" | "guest-email" | "verify-code";
+  function handleDialogOpenChange(nextOpen: boolean) {
+    setOpen(nextOpen);
+
+    if (!nextOpen) {
+      setStep("choice");
+      setGuestEmail("");
+      setVerificationCode("");
+    }
+  }
+
+  type PurchaseStep = "choice" | "guest-email" | "verify-code" | "payment";
 
   const [step, setStep] = useState<PurchaseStep>("choice");
   const [guestEmail, setGuestEmail] = useState("");
@@ -38,10 +48,12 @@ export function PurchaseDialog() {
 
   function handleUserPurchase() {
     if (isSignedIn) {
-      console.log("Usuário logado: seguir para pagamento");
+      setStep("payment");
+      setOpen(true);
       return;
     }
 
+    setStep("choice"); //talvez mude
     setOpen(true);
   }
 
@@ -97,13 +109,15 @@ export function PurchaseDialog() {
     }
 
     console.log("Código verificado com sucesso.");
+
+    setStep("payment");
   }
 
   return (
     <>
       <Button onClick={handleUserPurchase}>Comprar</Button>
 
-      <Dialog open={open} onOpenChange={setOpen}>
+      <Dialog open={open} onOpenChange={handleDialogOpenChange}>
         <DialogContent>
           <DialogHeader className="flex flex-col gap-4 items-center">
             <DialogTitle>Continue sua compra</DialogTitle>
@@ -140,6 +154,20 @@ export function PurchaseDialog() {
               />
 
               <Button onClick={handleSendCode}>Enviar código</Button>
+            </div>
+          )}
+
+          {step === "payment" && (
+            <div className="flex flex-col gap-4">
+              <p className="text-center">
+                Escolha como deseja realizar o pagamento:
+              </p>
+
+              <Button disabled>Pagar com Pix</Button>
+
+              <Button variant="outline" disabled>
+                Pagar com cartão
+              </Button>
             </div>
           )}
 
